@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "PopUpView"
   s.version      = "1.0"
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "7.1"
   #s.ios.deployment_target = "7.0"
   s.summary      = "PopUpView is a library that will provide a popup animation."
   s.description  = <<-DESC
@@ -21,10 +21,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/prajwals/PopUpView.git", 
                      :tag => "v1.0" }
   s.requires_arc = true
-  s.source_files  = "include", "*.{h,m}"
-  s.preserve_paths  = "libPopUpView.a"
-  s.frameworks = "UIKit", "QuartzCore", "Accelerate", "Foundation"
+  s.source_files  = "PopUpView_v1.0/include", "*.{h,m}"
+  s.preserve_paths  = "PopUpView_v1.0"
+  s.frameworks = %w{UIKit QuartzCore Accelerate Foundation}
   s.library = 'PopUpView'
-  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/#{s.name}"' }
-  #s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/PopUpView"' }
+  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/PopUpView/PopUpView_v1.0"' }
 end
