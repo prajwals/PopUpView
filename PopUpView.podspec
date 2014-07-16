@@ -104,10 +104,10 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
+  s.resource  = "libPopUpView.a"
   # s.resources = "Resources/*.png"
 
-  s.preserve_paths = "libPopUpView.a", "$(PODS_ROOT)/libPopUpView.a"
+  # s.preserve_paths = "libPopUpView.a"
 
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -126,7 +126,7 @@ Pod::Spec.new do |s|
   #  you can include multiple dependencies to ensure it works.
 
   s.requires_arc = true
-  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/PopUpView"' }
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/PopUpView" , 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/PopUpView"' }
 
   # s.dependency "JSONKit", "~> 1.4"
 
