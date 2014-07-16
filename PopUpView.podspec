@@ -17,10 +17,11 @@ Pod::Spec.new do |s|
 
   s.name         = "PopUpView"
   s.version      = "1.0"
-  s.summary      = "PopUpView is a library that will provide a popup animation to a UIViewControl that you add it on top."
+  s.summary      = "PopUpView is a library that will provide a popup animation."
 
   s.description  = <<-DESC
-                   PopUpView is a library that will provide a popup animation to a UIViewControl that you add it on top.
+  PopUpView is a very useful cocoa control,
+  PopUpView is a library that will provide a popup animation to a UIViewControl that you add it on top.
                    DESC
 
   s.homepage     = "https://github.com/prajwals/PopUpView.git"
