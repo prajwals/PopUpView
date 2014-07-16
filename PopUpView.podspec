@@ -17,15 +17,10 @@ Pod::Spec.new do |s|
 
   s.name         = "PopUpView"
   s.version      = "1.0"
-  s.summary      = "A short description of PopUpView."
+  s.summary      = "PopUpView is a library that will provide a popup animation to a UIViewControl that you add it on top."
 
   s.description  = <<-DESC
-                   A longer description of PopUpView in Markdown format.
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
+                   PopUpView is a library that will provide a popup animation to a UIViewControl that you add it on top.
                    DESC
 
   s.homepage     = "https://github.com/prajwals/PopUpView.git"
@@ -133,7 +128,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
