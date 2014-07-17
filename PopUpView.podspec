@@ -21,10 +21,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/prajwals/PopUpView.git", 
                      :tag => "2.0" }
   s.requires_arc = true
-  s.source_files  = "PopUpView_v1.0/include", "*.{h,m}"
-  s.preserve_paths  = "PopUpView_v1.0"
-  s.ios.vendored_library = 'PopUpView_v1.0/libPopUpView.a'
+  s.source_files  = "PopUpView_v3.0/*.h"
+  s.preserve_paths  = "PopUpView_v3.0"
+  s.ios.vendored_library = 'PopUpView_v3.0/libPopUpView.a'
   s.frameworks = %w{UIKit QuartzCore Accelerate Foundation}
   s.library = 'PopUpView'
-  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/PopUpView/PopUpView_v1.0"' }
+  s.xcconfig = { 'OTHER_LDFLAGS' => '"-ObjC"' }
 end
