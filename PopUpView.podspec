@@ -23,8 +23,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files  = "PopUpView_v3.0/*.h"
   s.preserve_paths  = "PopUpView_v3.0"
-  s.ios.vendored_library = 'PopUpView_v3.0/libPopUpView.a'
-  s.frameworks = %w{UIKit QuartzCore Accelerate Foundation}
-  s.library = 'PopUpView'
+  s.vendored_library = 'PopUpView_v3.0/libPopUpView.a'
+  s.frameworks = %w{ UIKit QuartzCore Accelerate Foundation }
+  # s.library = 'PopUpView'
   s.xcconfig = { 'OTHER_LDFLAGS' => '"-ObjC"' }
 end
