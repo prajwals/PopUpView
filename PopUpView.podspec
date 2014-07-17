@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name         = "PopUpView"
-  s.version      = "1.0"
-  s.platform     = :ios, "7.1"
-  #s.ios.deployment_target = "7.0"
+  s.version      = "2.0"
+  s.platform     = :ios, "7.0"
+  s.ios.deployment_target = "7.0"
   s.summary      = "PopUpView is a library that will provide a popup animation."
   s.description  = <<-DESC
   PopUpView is a very useful cocoa control for animating and show a pop view,
@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
   s.author             = { "Prajwal S" => "prajwal.s@robosoftin.com" }
   s.social_media_url   = "http://twitter.com/@prajwalsp"
   s.source       = { :git => "https://github.com/prajwals/PopUpView.git", 
-                     :tag => "v1.0" }
+                     :tag => "2.0" }
   s.requires_arc = true
-  s.ios.vendored_library = 'PopUpView_v1.0/libPopUpView.a'
   s.source_files  = "PopUpView_v1.0/include", "*.{h,m}"
   s.preserve_paths  = "PopUpView_v1.0"
+  s.ios.vendored_library = 'PopUpView_v1.0/libPopUpView.a'
   s.frameworks = %w{UIKit QuartzCore Accelerate Foundation}
   s.library = 'PopUpView'
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/PopUpView/PopUpView_v1.0"' }
