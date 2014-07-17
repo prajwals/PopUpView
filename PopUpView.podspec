@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/prajwals/PopUpView.git", 
                      :tag => "v1.0" }
   s.requires_arc = true
+  s.ios.vendored_library = 'PopUpView_v1.0/libPopUpView.a'
   s.source_files  = "PopUpView_v1.0/include", "*.{h,m}"
   s.preserve_paths  = "PopUpView_v1.0"
   s.frameworks = %w{UIKit QuartzCore Accelerate Foundation}
